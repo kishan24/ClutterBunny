@@ -1,5 +1,6 @@
  <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <%@page import="com.clutterbunny.web.utils.RequestUtil"%>
+<nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -15,6 +16,9 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+                	 <li class="page-scroll">
+                        <a href="<%=RequestUtil.CTX_PATH%>/"><i class="glyphicon glyphicon-home"></i>Home</a>
+                    </li>
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
@@ -28,7 +32,7 @@
                         <a href="#contact">Contact</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="user/signup"><i class="glyphicon glyphicon-user"></i>SIGNUP</a>
+                        <a href="<%=RequestUtil.CTX_PATH%>/user/signup"><i class="glyphicon glyphicon-user"></i>SIGNUP</a>
                     </li>
                 </ul>
             </div>
@@ -37,18 +41,4 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="assets/img/profile.png" alt="">
-                    <div class="intro-text">
-                        <span class="name">Start Bootstrap</span>
-                        <hr class="star-light">
-                        <span class="skills">Web Developer - Graphic Artist - User Experience Designer</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+    

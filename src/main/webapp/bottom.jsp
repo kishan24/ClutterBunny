@@ -1,4 +1,5 @@
  <!-- jQuery -->
+<%@page import="com.clutterbunny.web.utils.RequestUtil"%>
 <script src="<%=RequestUtil.CTX_PATH%>/assets/js/jquery.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
