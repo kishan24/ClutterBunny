@@ -8,9 +8,11 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional
 public class DummyScheduler {
 	
-	@Scheduled(fixedDelay=60*60*1000)
+	@Scheduled(fixedDelay=30*1000)
 	public void generateBill() {
-		
+		if(true) {
+			System.out.println("This is from scheduler");
+		}
 	}
 
 }

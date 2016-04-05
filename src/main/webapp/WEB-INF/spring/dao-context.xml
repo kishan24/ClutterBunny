@@ -10,7 +10,7 @@
 		http://www.springframework.org/schema/tx 
 		http://www.springframework.org/schema/tx/spring-tx-3.0.xsd" >
 
-
+	 <!-- <context:property-placeholder location="classpath:foo.properties" /> -->
 	
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
 		destroy-method="close">
@@ -21,8 +21,6 @@
 		<property name="password" value="root" />
 	</bean>
 	
-
-	<!-- <bean id="hsqlDBServer" class="com.h2kinfosys.mortgage.db.HsqlDBServer" /> -->
 
 	<bean id="entityManagerFactory"
 		class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">

@@ -8,6 +8,15 @@
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
             <form name="sentMessage" id="contactForm" novalidate>
+            	<div class="row">
+            		<div class="col-md-4  col-sm-12" style="text-align:right;">
+	            		<label >First Name</label>
+            		</div>
+            	<div class="control-group col-md-8 col-sm-12">
+            		<input type="text" class="form-control" placeholder="First Name">
+            	</div>
+            	</div>
+            
                 <div class="row control-group">
                     <div class="form-group col-xs-12 floating-label-form-group controls">
                         <label>Name</label>

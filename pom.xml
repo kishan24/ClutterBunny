@@ -143,12 +143,6 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.6</version>
 		</dependency>
-		<!--dependency>
-			<groupId>org.hsqldb</groupId>
-			<artifactId>hsqldb</artifactId>
-			<version>2.0.0</version>
-		</dependency-->
-
 
 		<!-- Axis2 dependencies -->
 		<dependency>

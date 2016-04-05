@@ -10,7 +10,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#page-top">Clutter Bunny</a>
+                <a class="navbar-brand" href="#page-top">
+                	<img src="assets/img/clutterbunny.png" >
+                	Clutter Bunny 
+                	<small>New way to Give, Get and Benefit </small>
+                </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
