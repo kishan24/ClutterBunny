@@ -6,6 +6,8 @@ package com.clutterbunny.dao;
 import java.util.Date;
 import java.util.List;
 
+import javax.persistence.Query;
+
 import org.springframework.stereotype.Service;
 
 import com.clutterbunny.domain.User;
@@ -23,6 +25,13 @@ public class UserDAO extends BaseDAO {
 		user.setLastModifiedTime(user.getCreatedTime());
 		
 		persist(user);
+	}
+	
+	public User getUserByEmail(String email) {
+		Query q = entityManager
+				.createQuery("SELECT u FROM User u where u.email = :email");
+		q.setParameter("email", email);
+		return findFirst(User.class, q);
 	}
 	
 	

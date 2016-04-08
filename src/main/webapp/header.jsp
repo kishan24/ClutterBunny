@@ -11,7 +11,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#page-top">
-                	<img src="assets/img/clutterbunny.png" >
+                	<img src="<%=RequestUtil.CTX_PATH%>/assets/img/clutterbunny.png" >
                 	Clutter Bunny 
                 	<small>New way to Give, Get and Benefit </small>
                 </a>
@@ -26,7 +26,7 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li class="page-scroll">
+                   <!--  <li class="page-scroll">
                         <a href="#portfolio">Portfolio</a>
                     </li>
                     <li class="page-scroll">
@@ -34,9 +34,15 @@
                     </li>
                     <li class="page-scroll">
                         <a href="#contact">Contact</a>
-                    </li>
+                    </li> -->
                     <li class="page-scroll">
                         <a href="<%=RequestUtil.CTX_PATH%>/user/signup"><i class="glyphicon glyphicon-user"></i>SIGNUP</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="<%=RequestUtil.CTX_PATH%>/registry/book"><i class="glyphicon glyphicon-book"></i>REGISTRY</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="<%=RequestUtil.CTX_PATH%>/registry/search"><i class="glyphicon glyphicon-search"></i>Search</a>
                     </li>
                 </ul>
             </div>

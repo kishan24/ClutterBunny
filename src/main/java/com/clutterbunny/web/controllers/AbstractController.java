@@ -5,12 +5,15 @@ import java.util.Date;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.clutterbunny.dao.BookRegistryDAO;
 import com.clutterbunny.dao.UserDAO;
 import com.clutterbunny.exceptions.InputValidateException;
 
 public abstract class AbstractController {
 	
 	@Autowired protected UserDAO userDAO;
+	@Autowired protected BookRegistryDAO bookRegistryDAO;
+	
 
 	protected ModelAndView createModel(String viewName) {
 		ModelAndView mav = new ModelAndView("index");
