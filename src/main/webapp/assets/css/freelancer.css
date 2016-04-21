@@ -139,70 +139,54 @@ header .intro-text .skills {
     }
     
     .navbar-fixed-top .navbar-brand img {
-        width:60px;height:60px;position: fixed;top: 35px;left: 45px;
+        width:60px;height:60px;position:fixed;top:20px;left:10px;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
         display:block;
     }
     
-    .navbar-fixed-top .navbar-brand small {
-        position:relative;top: 20px;left: -240px;font-size: 11px;color: #18BC9C;
-        -webkit-transition: all .3s;
-        -moz-transition: all .3s;
-        transition: all .3s;
+    .navbar-fixed-top .navbar-brand span{
+    	position:relative;left:55px;top:-10px;font-size:24px;
     }
-   
-
+    .navbar-fixed-top .navbar-brand small {
+        position:relative;top: 5px;left:-160px;font-size: 11px;color: #18BC9C;
+    }
     .navbar-fixed-top.navbar-shrink {
         padding: 10px 0;
     }
-
     .navbar-fixed-top.navbar-shrink .navbar-brand {
         font-size: 1.5em;
     }
-    
     .navbar-fixed-top.navbar-shrink .navbar-brand img {
-        width:40px;
-        height:40px;
-        top: 25px;
-        left:60px;
-        display:block;
+        width:40px; height:40px; display:block;
     }
-    
     .navbar-fixed-top.navbar-shrink .navbar-brand small {
         top: 20px;left: -180px;font-size: 8px;color: #18BC9C;
+    }
+    .navbar-fixed-top.navbar-shrink .navbar-brand span{
+    	position:relative;left:35px;top:-10px;
+    }
+    .navbar-fixed-top.navbar-shrink .navbar-brand small {
+        position:relative;top: 5px;left:-160px;font-size: 9px;color: #18BC9C;
     }
     
 }
 
-@media (min-device-width: 480px) {
-	.navbar-brand {
-		font-size:14px;
-	}
-	.navbar-brand img {
-		display:none;
-        width:40px;
-        height:40px;
-        top: 10px;
-        left:10px;position: fixed;
+
+@media (min-device-width: 480px)  {
+    .navbar-brand img {
+        width:40px; height:40px; display:block;position: fixed;top: 10px;left: 10px;
+    }
+    .navbar-brand span {
+        position: relative;top: -60px;left: 40px;font-size:14px;
     }
     .navbar-brand small {
-        top: 40px;left: 10px;font-size: 8px;color: #18BC9C;position: fixed;
+        position: relative;    top: -50px;left: -83px;color: #18BC9C;font-size:8px;
     }
 }
 
-@media (max-width: @screen-sm-max) {
-	.navbar-fixed-top.navbar-shrink .navbar-brand img {
-        width:20px;
-        height:20px;
-        top: 5px;
-        left:5px;
-    }
-    .navbar-fixed-top.navbar-shrink .navbar-brand small {
-        top: 20px;left: -180px;font-size: 8px;color: #18BC9C;
-    }
-}
+
 
 .navbar {
     text-transform: uppercase;

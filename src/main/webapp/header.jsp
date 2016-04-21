@@ -12,7 +12,7 @@
                 </button>
                 <a class="navbar-brand" href="#page-top">
                 	<img src="<%=RequestUtil.CTX_PATH%>/assets/img/clutterbunny.png" class="img-responsive" >
-                	Clutter Bunny 
+                	<span>Clutter Bunny</span> 
                 	<small>New way to Give, Get and Benefit </small>
                 </a>
             </div>
