@@ -11,7 +11,7 @@
          </div>
             
 		<div class="col-lg-8 col-lg-offset-2">
-			<form class="form-horizontal">
+			<div class="form-horizontal">
 				<div class="form-group">
 					<div class="col-sm-10">
 						<input type="text" class="form-control" id="kw" placeholder="Search">
@@ -21,7 +21,7 @@
 					</div>
 					
 				</div>
-			</form>
+			</div>
 		</div>
 	</div>
 	
@@ -48,29 +48,38 @@
 
 
 <script>
-
+var app = {};
 $(function() {
+	app.search = function() {
+		var inp = {};
+		   inp.kw = $('#kw').val();
+		   $.ajax({
+			  method:"GET",
+			  data:inp,
+			  url:"searchResults",
+			  success:function(resp) {
+				  $('#results').empty();
+				  $.each(resp, function(i, book) {
+					 $('#results').append(
+						'<tr>'
+						+'	<td>'+book.name+'</td>'
+						+'	<td>'+book.isbnNumber+'</td>'
+						+'	<td>'+timeConverter(book.byWhen)+'</td>'
+						+'</tr>'
+					 ); 
+				  });
+			  }
+		   });
+	}	
    $('#search').click(function() {
-	   var inp = {};
-	   inp.kw = $('#kw').val();
-	   $.ajax({
-		  method:"GET",
-		  data:inp,
-		  url:"searchResults",
-		  success:function(resp) {
-			  $('#results').empty();
-			  $.each(resp, function(i, book) {
-				 $('#results').append(
-					'<tr>'
-					+'	<td>'+book.name+'</td>'
-					+'	<td>'+book.isbnNumber+'</td>'
-					+'	<td>'+timeConverter(book.byWhen)+'</td>'
-					+'</tr>'
-				 ); 
-			  });
-		  }
-	   });
+	   app.search();
    }); 
+   $('#kw').keyup(function(event) {
+	   if(event.keyCode == 13) {
+		   app.search();
+	   }
+   });
+   
 });
 
 function timeConverter(UNIX_timestamp){
