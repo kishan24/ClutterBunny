@@ -11,7 +11,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#page-top">
-                	<img src="<%=RequestUtil.CTX_PATH%>/assets/img/clutterbunny.png" >
+                	<img src="<%=RequestUtil.CTX_PATH%>/assets/img/clutterbunny.png" class="img-responsive" >
                 	Clutter Bunny 
                 	<small>New way to Give, Get and Benefit </small>
                 </a>

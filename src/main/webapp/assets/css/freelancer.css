@@ -143,6 +143,7 @@ header .intro-text .skills {
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
+        display:block;
     }
     
     .navbar-fixed-top .navbar-brand small {
@@ -166,12 +167,41 @@ header .intro-text .skills {
         height:40px;
         top: 25px;
         left:60px;
+        display:block;
     }
     
     .navbar-fixed-top.navbar-shrink .navbar-brand small {
         top: 20px;left: -180px;font-size: 8px;color: #18BC9C;
     }
     
+}
+
+@media (min-device-width: 480px) {
+	.navbar-brand {
+		font-size:14px;
+	}
+	.navbar-brand img {
+		display:none;
+        width:40px;
+        height:40px;
+        top: 10px;
+        left:10px;position: fixed;
+    }
+    .navbar-brand small {
+        top: 40px;left: 10px;font-size: 8px;color: #18BC9C;position: fixed;
+    }
+}
+
+@media (max-width: @screen-sm-max) {
+	.navbar-fixed-top.navbar-shrink .navbar-brand img {
+        width:20px;
+        height:20px;
+        top: 5px;
+        left:5px;
+    }
+    .navbar-fixed-top.navbar-shrink .navbar-brand small {
+        top: 20px;left: -180px;font-size: 8px;color: #18BC9C;
+    }
 }
 
 .navbar {
